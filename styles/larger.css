@@ -1,0 +1,37 @@
+@media (min-width: 768px) {
+    /* Hide hamburger */
+    #menuBtn {
+        display: none;
+    }
+    /* Horizontal nav */
+    nav {
+        display: block !important;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    nav li {
+        border: none;
+    }
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+    /* Grid layout for main */
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+    }
+    main h1 {
+        grid-column: 1 / -1;
+    }
+    .certificate-table {
+        font-size: 1rem;
+    }
+    /* Courses in two columns */
+    #courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
