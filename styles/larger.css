@@ -1,9 +1,9 @@
 @media (min-width: 768px) {
-    /* Hide hamburger */
+    /* ===== Hide Hamburger ===== */
     #menuBtn {
         display: none;
     }
-    /* Horizontal nav */
+    /* ===== Horizontal Navigation ===== */
     nav {
         display: block !important;
     }
@@ -18,7 +18,7 @@
     nav a {
         padding: 0.5rem 1rem;
     }
-    /* Grid layout for main */
+    /* ===== Main Grid Layout ===== */
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -27,11 +27,18 @@
     main h1 {
         grid-column: 1 / -1;
     }
-    .certificate-table {
-        font-size: 1rem;
-    }
-    /* Courses in two columns */
+    /* ===== Courses Grid ===== */
     #courses {
         grid-template-columns: repeat(2, 1fr);
+    }
+    /* Ensure total credits spans full width */
+    #totalCredits {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    /* ===== Certificate Table ===== */
+    .certificate-table {
+        font-size: 1rem;
     }
 }
