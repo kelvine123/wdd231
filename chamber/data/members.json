@@ -1,0 +1,59 @@
+{
+    "members": [{
+            "name": "Sokomoko Hardware",
+            "address": "12 Market Street, Sokomoko",
+            "phone": "+254 712 345 678",
+            "website": "https://sokomokohardware.com",
+            "image": "hardware.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Lakeview Restaurant",
+            "address": "45 Lakeside Road, Sokomoko",
+            "phone": "+254 701 555 333",
+            "website": "https://lakeviewrestaurant.com",
+            "image": "restaurant.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Sokomoko Tech Hub",
+            "address": "88 Innovation Ave, Sokomoko",
+            "phone": "+254 700 222 111",
+            "website": "https://sokomokotech.com",
+            "image": "techhub.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Green Farm Supplies",
+            "address": "3 Rural Road, Sokomoko",
+            "phone": "+254 713 222 444",
+            "website": "https://greenfarm.com",
+            "image": "farm.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Bright Future School",
+            "address": "9 Education Lane, Sokomoko",
+            "phone": "+254 701 888 222",
+            "website": "https://brightfuture.edu",
+            "image": "school.jpg",
+            "membership": 1
+        },
+        {
+            "name": "Sokomoko Motors",
+            "address": "55 Garage Street, Sokomoko",
+            "phone": "+254 799 555 666",
+            "website": "https://sokomokomotors.com",
+            "image": "motors.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Sunrise Bakery",
+            "address": "10 Main Street, Sokomoko",
+            "phone": "+254 722 333 777",
+            "website": "https://sunrisebakery.com",
+            "image": "bakery.jpg",
+            "membership": 1
+        }
+    ]
+}
