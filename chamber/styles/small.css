@@ -1,75 +1,132 @@
 body {
     font-family: Roboto, Arial, sans-serif;
-    background: #F5F5F5;
-    color: #222;
     margin: 0;
+    background: #f4f6f8;
+    color: #1f2a35;
 }
 
+
+/* HEADER */
+
 header {
-    background: #2E7D32;
+    background: #1c2f3f;
     color: white;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
 }
+
+
+/* NAVIGATION */
 
 nav ul {
     list-style: none;
     padding: 0;
-}
-
-nav li {
-    margin: 10px 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 0.95rem;
 }
+
+nav a:hover {
+    color: #d4d93a;
+}
+
+
+/* MAIN CONTENT */
 
 main {
-    padding: 1rem;
+    padding: 40px 20px;
 }
 
+
+/* VIEW BUTTONS */
+
 .view-buttons {
-    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 button {
-    padding: 10px;
+    padding: 12px 20px;
     margin-right: 10px;
-    background: #FFC107;
+    background: #1c2f3f;
+    color: white;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
 }
+
+button:hover {
+    background: #d4d93a;
+    color: #1c2f3f;
+}
+
+
+/* GRID DIRECTORY */
 
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 25px;
 }
+
+
+/* BUSINESS CARD */
 
 .card {
     background: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card img {
-    width: 100%;
-    max-width: 200px;
+    width: 120px;
+    margin-bottom: 15px;
 }
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 0.9rem;
+}
+
+
+/* LIST VIEW */
 
 .list {
     display: block;
 }
 
+.list .card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+
+/* FOOTER */
+
 footer {
-    background: #2E7D32;
+    background: #1c2f3f;
     color: white;
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    padding: 30px;
+    margin-top: 40px;
 }
