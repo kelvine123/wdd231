@@ -167,6 +167,51 @@ button:hover {
     }
 }
 
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.cta {
+    background: #d4d93a;
+    padding: 12px 20px;
+    color: #1c2f3f;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.spotlights {
+    margin-top: 40px;
+}
+
+#spotlight-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.spotlight {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
 
 /* FOOTER */
 
