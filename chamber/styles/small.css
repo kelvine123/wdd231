@@ -39,6 +39,25 @@ nav a:hover {
 }
 
 
+/* Wayfinding (active page) */
+
+nav a.active {
+    color: #d4d93a;
+}
+
+
+/* HAMBURGER */
+
+#hamburger {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
 /* MAIN CONTENT */
 
 main {
@@ -71,7 +90,7 @@ button:hover {
 
 /* GRID DIRECTORY */
 
-.grid {
+.grid-view {
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
@@ -109,15 +128,43 @@ button:hover {
 
 /* LIST VIEW */
 
-.list {
-    display: block;
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.list .card {
-    display: flex;
+.list-view .card {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
-    gap: 20px;
     text-align: left;
+}
+
+
+/* Requirement: images hidden in list view */
+
+.list-view img {
+    display: none;
+}
+
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: 768px) {
+    #hamburger {
+        display: block;
+        margin: 0 auto;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    nav.open ul {
+        display: flex;
+    }
 }
 
 
