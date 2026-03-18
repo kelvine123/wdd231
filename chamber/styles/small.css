@@ -237,6 +237,9 @@ button:hover {
 
 /* MOBILE NAVIGATION */
 
+
+/* MOBILE NAVIGATION */
+
 @media (max-width: 768px) {
     #hamburger {
         display: block;
@@ -247,8 +250,9 @@ button:hover {
         flex-direction: column;
         gap: 10px;
         margin-top: 15px;
+        text-align: center;
     }
-    nav.open ul {
+    #navMenu.open {
         display: flex;
     }
 }
