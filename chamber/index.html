@@ -2,15 +2,30 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sokomoko Chamber of Commerce</title>
 
     <meta name="description" content="Welcome to the Sokomoko Chamber of Commerce. Discover businesses, events, and opportunities in Sokomoko.">
+
     <meta name="author" content="Kelvine Owino Inganga">
 
     <link rel="icon" href="images/favicon.png">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Sokomoko Chamber of Commerce - Supporting Local Business">
+    <meta property="og:description" content="Discover businesses, events, and opportunities in Sokomoko through the Chamber of Commerce.">
+    <meta property="og:image" content="https://yourgithubusername.github.io/chamber/images/hero.png">
+    <meta property="og:url" content="https://yourgithubusername.github.io/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -25,12 +40,11 @@
 
     <header>
 
-        <h1>Sokomoko Chamber of Commerce</h1>
+        <nav class="navigation">
 
-        <button id="hamburger">☰</button>
+            <button id="hamburger">☰</button>
 
-        <nav id="navMenu">
-            <ul>
+            <ul id="navMenu">
 
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
@@ -39,17 +53,19 @@
                 <li><a href="contact.html">Contact</a></li>
 
             </ul>
+
         </nav>
 
     </header>
 
     <main>
 
-        <!-- HERO -->
+        <h1>Sokomoko Chamber of Commerce</h1>
 
+        <!-- HERO SECTION -->
         <section class="hero">
 
-            <img src="images/hero.png" alt="Sokomoko city businesses">
+            <img src="images/hero.jpg" alt="Sokomoko city businesses">
 
             <div class="hero-text">
 
@@ -61,24 +77,18 @@
 
         </section>
 
-
-        <!-- CURRENT EVENTS -->
-
+        <!-- EVENTS -->
         <section class="events">
 
             <h2>Current Events</h2>
 
             <p>Small Business Networking Meetup – April 12</p>
-
             <p>Entrepreneur Workshop – April 20</p>
-
             <p>Annual Sokomoko Business Expo – May 10</p>
 
         </section>
 
-
         <!-- WEATHER -->
-
         <section class="weather">
 
             <h2>Weather</h2>
@@ -93,9 +103,7 @@
 
         </section>
 
-
         <!-- SPOTLIGHTS -->
-
         <section class="spotlights">
 
             <h2>Member Spotlights</h2>
@@ -105,7 +113,6 @@
         </section>
 
     </main>
-
 
     <footer>
 

@@ -1,8 +1,11 @@
+/* GLOBAL STYLES */
+
 body {
-    font-family: Roboto, Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     margin: 0;
     background: #f4f6f8;
     color: #1f2a35;
+    line-height: 1.6;
 }
 
 
@@ -39,14 +42,14 @@ nav a:hover {
 }
 
 
-/* Wayfinding (active page) */
+/* ACTIVE PAGE */
 
 nav a.active {
     color: #d4d93a;
 }
 
 
-/* HAMBURGER */
+/* HAMBURGER MENU */
 
 #hamburger {
     display: none;
@@ -62,6 +65,62 @@ nav a.active {
 
 main {
     padding: 40px 20px;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text h2 {
+    font-size: 1.8rem;
+}
+
+
+/* CALL TO ACTION BUTTON */
+
+.cta {
+    display: inline-block;
+    background: #d4d93a;
+    padding: 12px 20px;
+    color: #1c2f3f;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.cta:hover {
+    background: #c1c530;
+}
+
+
+/* EVENTS & WEATHER */
+
+.events,
+.weather {
+    margin-top: 40px;
+}
+
+.weather span {
+    font-weight: bold;
 }
 
 
@@ -136,16 +195,43 @@ button:hover {
 
 .list-view .card {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr;
     align-items: center;
     text-align: left;
+    padding: 15px 20px;
 }
 
 
-/* Requirement: images hidden in list view */
+/* Hide images in list view */
 
 .list-view img {
     display: none;
+}
+
+
+/* SPOTLIGHT SECTION */
+
+.spotlights {
+    margin-top: 40px;
+}
+
+#spotlight-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.spotlight {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight img {
+    width: 100px;
+    margin-bottom: 10px;
 }
 
 
@@ -165,51 +251,6 @@ button:hover {
     nav.open ul {
         display: flex;
     }
-}
-
-.hero {
-    position: relative;
-    text-align: center;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
-.hero-text {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.cta {
-    background: #d4d93a;
-    padding: 12px 20px;
-    color: #1c2f3f;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 6px;
-}
-
-.spotlights {
-    margin-top: 40px;
-}
-
-#spotlight-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-.spotlight {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 
