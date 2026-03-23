@@ -157,22 +157,22 @@ Business Description
         <section class="cards">
 
             <div class="card np">
-                <h1>NP Membership</h1>
+                <h2>NP Membership</h2>
                 <a href="#">Benefits</a>
             </div>
 
             <div class="card bronze">
-                <h1>Bronze Membership</h1>
+                <h2>Bronze Membership</h2>
                 <a href="#">Benefits</a>
             </div>
 
             <div class="card silver">
-                <h1>Silver Membership</h1>
+                <h2>Silver Membership</h2>
                 <a href="#">Benefits</a>
             </div>
 
             <div class="card gold">
-                <h1>Gold Membership</h1>
+                <h2>Gold Membership</h2>
                 <a href="#">Benefits</a>
             </div>
 
@@ -185,25 +185,25 @@ Business Description
     <dialog id="npModal">
         <h2>NP Membership</h2>
         <p>Free membership for nonprofit organizations.</p>
-        <button onclick="this.closest('dialog').close()">Close</button>
+
     </dialog>
 
     <dialog id="bronzeModal">
         <h2>Bronze Membership</h2>
         <p>Basic advertising and networking events.</p>
-        <button onclick="this.closest('dialog').close()">Close</button>
+
     </dialog>
 
     <dialog id="silverModal">
         <h2>Silver Membership</h2>
         <p>Training events, discounts, and featured listings.</p>
-        <button onclick="this.closest('dialog').close()">Close</button>
+
     </dialog>
 
     <dialog id="goldModal">
         <h2>Gold Membership</h2>
         <p>Premium advertising and homepage spotlight.</p>
-        <button onclick="this.closest('dialog').close()">Close</button>
+
     </dialog>
 
     <footer>
@@ -220,31 +220,7 @@ Business Description
         <p id="lastModified"></p>
 
     </footer>
-    <script>
-        // Update current year (if you have a <span id="year"></span>)
-        const yearEl = document.getElementById("year");
-        if (yearEl) {
-            yearEl.textContent = new Date().getFullYear();
-        }
 
-        // Update last modified
-        const lastModEl = document.getElementById("lastModified");
-        if (lastModEl) {
-            const modifiedDate = new Date(document.lastModified);
-            lastModEl.textContent = "Last Modified: " + modifiedDate.toLocaleString();
-        }
-    </script>
-
-
-    <script>
-        const form = document.getElementById("joinForm");
-        const timestampInput = document.getElementById("timestamp");
-
-        form.addEventListener("submit", () => {
-            timestampInput.value = new Date().toISOString();
-            console.log("Timestamp set:", timestampInput.value); // For testing
-        });
-    </script>
 
 
 </body>
