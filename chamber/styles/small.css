@@ -206,42 +206,42 @@ input[type="submit"]:hover {
 }
 
 
-/* CARD COLORS BY MEMBERSHIP */
+/* CARD COLORS BY MEMBERSHIP - Accessible Version */
 
 .card.np {
-    background: #e8f8f0;
-    border-left: 6px solid #2ecc71;
+    background: #e0f4e6;
+    border-left: 6px solid #27ae60;
 }
 
 .card.np h3 {
-    color: #1e8449;
+    color: #145a33;
 }
 
 .card.bronze {
-    background: #fdf2e9;
-    border-left: 6px solid #cd7f32;
+    background: #fbead7;
+    border-left: 6px solid #b87333;
 }
 
 .card.bronze h3 {
-    color: #a0522d;
+    color: #7a3e1f;
 }
 
 .card.silver {
-    background: #f4f6f7;
-    border-left: 6px solid #c0c0c0;
+    background: #e6e9eb;
+    border-left: 6px solid #a9a9a9;
 }
 
 .card.silver h3 {
-    color: #566573;
+    color: #37474f;
 }
 
 .card.gold {
-    background: #fff8dc;
-    border-left: 6px solid #ffd700;
+    background: #fff3b8;
+    border-left: 6px solid #b8860b;
 }
 
 .card.gold h3 {
-    color: #b7950b;
+    color: #7a5c00;
 }
 
 
