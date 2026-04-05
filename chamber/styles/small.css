@@ -144,6 +144,7 @@ input[type="submit"]:hover {
 }
 
 .card {
+    background: white;
     padding: 1.5rem;
     border-radius: 12px;
     text-align: center;
@@ -287,12 +288,6 @@ ul#results li strong {
     padding: 1rem;
     /* SMALL layout */
     grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6" "card7" "card8";
-}
-
-.card {
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
 }
 
 .card img {
