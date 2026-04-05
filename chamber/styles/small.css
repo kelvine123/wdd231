@@ -274,6 +274,32 @@ ul#results li strong {
     color: #1c2f3f;
 }
 
+#visitMessage {
+    background: #f4a261;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    /* SMALL layout */
+    grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6" "card7" "card8";
+}
+
+.card {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
 
 /* ===========================
    FOOTER
