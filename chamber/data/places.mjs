@@ -1,13 +1,13 @@
 export const places = [{
         name: "Nairobi National Park",
         address: "Langata Rd, Nairobi",
-        image: "images/park.webp",
+        image: "images/nairobi.webp",
         description: "A unique wildlife park near the city."
     },
     {
         name: "Giraffe Centre",
         address: "Karen, Nairobi",
-        image: "images/giraffe.webp",
+        image: "images/girafe.webp",
         description: "Interact with endangered giraffes."
     },
     {
@@ -19,7 +19,7 @@ export const places = [{
     {
         name: "Westgate Mall",
         address: "Westlands, Nairobi",
-        image: "images/westgate.webp",
+        image: "images/mall.webp",
         description: "Popular shopping and dining destination."
     },
     {
@@ -31,19 +31,19 @@ export const places = [{
     {
         name: "Uhuru Park",
         address: "CBD, Nairobi",
-        image: "images/uhuru.webp",
+        image: "images/park.webp",
         description: "Relaxing public park in the city."
     },
     {
         name: "Village Market",
         address: "Gigiri, Nairobi",
-        image: "images/village.webp",
+        image: "images/market.webp",
         description: "Shopping, food, and entertainment."
     },
     {
         name: "Ngong Hills",
         address: "Ngong, Nairobi",
-        image: "images/ngong.webp",
+        image: "images/hill.webp",
         description: "Scenic hills with great views."
     }
 ];
