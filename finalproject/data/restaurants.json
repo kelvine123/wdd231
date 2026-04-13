@@ -1,0 +1,4 @@
+[
+    { "name": "Java House", "image": "images/java.webp", "cuisine": "Cafe", "location": "Kisumu", "rating": 4.5, "description": "Coffee and meals" },
+    { "name": "KFC", "image": "images/kfc.webp", "cuisine": "Fast Food", "location": "Kisumu", "rating": 4.2, "description": "Fried chicken" }
+]

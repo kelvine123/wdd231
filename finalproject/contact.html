@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Uburn Bites</title>
+
+    <meta name="description" content="Welcome to Urban Bites. Discover delicious meals and a welcoming dining experience.">
+
+    <meta name="author" content="Kelvine Owino Inganga">
+
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Uburn Bites - Delicious Meals">
+    <meta property="og:description" content="Enjoy delicious meals and a welcoming dining experience at Urban Bites.">
+    <meta property="og:image" content="https://kelvine123.github.io/chamber/images/hero.png">
+    <meta property="og:url" content="https://kelvine123.github.io/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <h1>Urban Bites</h1>
+        <button id="menuBtn">☰</button>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+        <h2>Contact, Reservations & Orders</h2>
+        <p>
+            Book a table or place your delivery order. Enjoy Urban Bites wherever you are.
+        </p>
+
+        <!-- ================= RESERVATION FORM ================= -->
+        <section>
+            <h3>Table Reservation</h3>
+
+            <form action="thankyou.html" method="get">
+
+                <label>Full Name
+                    <input type="text" name="name" required>
+                </label>
+
+                <label>Email
+                    <input type="email" name="email" required>
+                </label>
+
+                <label>Phone
+                    <input type="tel" name="phone" required>
+                </label>
+
+                <label>Date
+                    <input type="date" name="date" required>
+                </label>
+
+                <label>Guests
+                    <input type="number" name="guests" required>
+                </label>
+
+                <button type="submit">Reserve Table</button>
+
+            </form>
+        </section>
+
+        <!-- ================= DELIVERY ORDER ================= -->
+        <section>
+            <h3>Order for Delivery</h3>
+
+            <form id="deliveryForm">
+
+                <label>Full Name
+                    <input type="text" id="dName" required>
+                </label>
+
+                <label>Phone
+                    <input type="tel" id="dPhone" required>
+                </label>
+
+                <label>Select Meal
+                    <select id="meal">
+                        <option value="500">Burger - KES 500</option>
+                        <option value="800">Pizza - KES 800</option>
+                        <option value="650">Pasta - KES 650</option>
+                        <option value="400">Salad - KES 400</option>
+                        <option value="250">Coffee - KES 250</option>
+                    </select>
+                </label>
+
+                <label>Quantity
+                    <input type="number" id="quantity" value="1" min="1">
+                </label>
+
+                <label>Delivery Option
+                    <select id="delivery">
+                        <option value="0">Pickup (Free)</option>
+                        <option value="200">Within Town - KES 200</option>
+                        <option value="400">Outside Town - KES 400</option>
+                    </select>
+                </label>
+
+                <h4>Total: KES <span id="totalPrice">0</span></h4>
+
+                <button type="submit">Place Order</button>
+
+            </form>
+        </section>
+
+        <!-- ================= LOCATION ================= -->
+        <section>
+            <h3>Location</h3>
+            <p>
+                We are located in Kisumu city center with easy access to transport and parking.
+            </p>
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <!-- Decorative Pattern (Top) -->
+        <div>
+
+        </div>
+
+        <!-- Main Footer Content -->
+        <div>
+
+            <!-- Logo / Brand -->
+            <div>
+                <h2>Urban Bites</h2>
+                <p>Your everyday dining destination.</p>
+            </div>
+
+            <!-- Policy Section -->
+            <div>
+                <h3>Policy</h3>
+                <p><a href="#">Privacy Policy</a></p>
+            </div>
+
+            <!-- Company Section -->
+            <div>
+                <h3>Company</h3>
+                <p><a href="#">About Us</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">News</a></p>
+            </div>
+
+        </div>
+
+        <!-- Social Media -->
+        <div>
+            <h3>Follow Us</h3>
+            <a href="#">X</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">YouTube</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">TikTok</a>
+        </div>
+
+        <!-- Copyright -->
+        <div>
+
+            <p><strong>Urban Bites</strong></p>
+
+            <p>
+                123 Business Street<br> Kisumu, Kenya<br> Phone: +254 700 123 456<br> Email: info@sokomoko.org
+            </p>
+
+            <p>Engineer Kelvine | WDD 231</p>
+
+            <p id="lastModified"></p>
+
+        </div>
+
+        <!-- Decorative Pattern (Bottom) -->
+        <div>
+            <p>---------------------------------------------</p>
+        </div>
+
+    </footer>

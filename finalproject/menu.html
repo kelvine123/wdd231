@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Uburn Bites</title>
+
+    <meta name="description" content="Welcome to Urban Bites. Discover delicious meals and a welcoming dining experience.">
+
+    <meta name="author" content="Kelvine Owino Inganga">
+
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Uburn Bites - Delicious Meals">
+    <meta property="og:description" content="Enjoy delicious meals and a welcoming dining experience at Urban Bites.">
+    <meta property="og:image" content="https://kelvine123.github.io/chamber/images/hero.png">
+    <meta property="og:url" content="https://kelvine123.github.io/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <h1>Urban Bites</h1>
+        <button id="menuBtn">☰</button>
+
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section>
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Food variety" width="100%">
+
+        <h2>Our Menu</h2>
+        <p>
+            Discover a wide range of delicious meals, from hearty classics to light bites and refreshing drinks.
+        </p>
+    </section>
+
+    <!-- ================= MENU INTRO ================= -->
+    <main>
+
+        <section>
+            <h2>Explore Our Dishes</h2>
+            <p>
+                At Urban Bites, we serve a variety of meals crafted with fresh ingredients. Whether you're craving fast food, Italian dishes, healthy meals, desserts, or beverages — there's something for everyone.
+            </p>
+        </section>
+
+        <!-- ================= CATEGORY CARDS (LIKE JAVA HOUSE BLOCKS) ================= -->
+        <section>
+            <div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Burgers">
+                    <h3>Fast Food</h3>
+                    <p>Delicious burgers, fries, and quick bites.</p>
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1604908176997-431c0f92e7c3" alt="Pizza">
+                    <h3>Italian</h3>
+                    <p>Authentic pasta and pizza dishes.</p>
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Healthy food">
+                    <h3>Healthy</h3>
+                    <p>Fresh salads and nutritious meals.</p>
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" alt="Dessert">
+                    <h3>Desserts</h3>
+                    <p>Sweet treats and baked delights.</p>
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Coffee">
+                    <h3>Beverages</h3>
+                    <p>Coffee, juices, smoothies, and more.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= DYNAMIC MENU ================= -->
+        <section>
+            <h2>Full Menu</h2>
+
+            <!-- JS will populate items here -->
+            <div id="menuContainer" class="grid"></div>
+        </section>
+
+    </main>
+
+    <!-- ================= MODAL ================= -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+
+            <span id="closeModal">&times;</span>
+
+            <div id="modalDetails">
+                <!-- JS inserts food details here -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= CTA ================= -->
+    <section>
+        <h2>Visit Us Today</h2>
+        <p>Experience food, comfort, and community.</p>
+        <a href="contact.html">Reserve a Table</a>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <!-- Decorative Pattern (Top) -->
+        <div>
+
+        </div>
+
+        <!-- Main Footer Content -->
+        <div>
+
+            <!-- Logo / Brand -->
+            <div>
+                <h2>Urban Bites</h2>
+                <p>Your everyday dining destination.</p>
+            </div>
+
+            <!-- Policy Section -->
+            <div>
+                <h3>Policy</h3>
+                <p><a href="#">Privacy Policy</a></p>
+            </div>
+
+            <!-- Company Section -->
+            <div>
+                <h3>Company</h3>
+                <p><a href="#">About Us</a></p>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">News</a></p>
+            </div>
+
+        </div>
+
+        <!-- Social Media -->
+        <div>
+            <h3>Follow Us</h3>
+            <a href="#">X</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">YouTube</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">TikTok</a>
+        </div>
+
+        <!-- Copyright -->
+        <div>
+
+            <p><strong>Urban Bites</strong></p>
+
+            <p>
+                123 Business Street<br> Kisumu, Kenya<br> Phone: +254 700 123 456<br> Email: info@sokomoko.org
+            </p>
+
+            <p>Engineer Kelvine | WDD 231</p>
+
+            <p id="lastModified"></p>
+
+        </div>
+
+        <!-- Decorative Pattern (Bottom) -->
+        <div>
+            <p>---------------------------------------------</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

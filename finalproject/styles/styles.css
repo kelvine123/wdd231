@@ -1,0 +1,796 @@
+/* ================= GLOBAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    background: #f7f7f7;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: #0f4c5c;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= HERO ================= */
+
+section:first-of-type {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+section:first-of-type img {
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+section:first-of-type h2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+}
+
+section:first-of-type p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+
+/* ================= SECTIONS ================= */
+
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0f4c5c;
+}
+
+
+/* ================= GRID ================= */
+
+section div {
+    display: grid;
+    gap: 20px;
+}
+
+section:nth-of-type(2) div,
+section:nth-of-type(3) div,
+section:nth-of-type(5) div {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+/* ================= CARDS ================= */
+
+section div div {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+section div div:hover {
+    transform: translateY(-5px);
+}
+
+section div div img {
+    height: 200px;
+    object-fit: cover;
+}
+
+section div div h3 {
+    padding: 10px;
+    color: #0f4c5c;
+}
+
+section div div p {
+    padding: 0 10px 15px;
+}
+
+
+/* ================= CTA ================= */
+
+section:last-of-type {
+    text-align: center;
+    background: #f4a261;
+    color: white;
+}
+
+section:last-of-type a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: white;
+    color: #f4a261;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #1f4f63;
+    color: #f1e3c6;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+/* Footer layout */
+
+footer>div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+
+/* Footer headings */
+
+footer h2,
+footer h3 {
+    margin-bottom: 10px;
+}
+
+
+/* Footer links */
+
+footer a {
+    color: #f1e3c6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Social */
+
+footer>div:nth-of-type(3) {
+    margin: 20px 0;
+}
+
+
+/* Decorative lines */
+
+footer>div:first-of-type,
+footer>div:last-of-type {
+    color: #f4a261;
+    margin: 10px 0;
+}
+
+
+/* ================= HERO (MENU PAGE) ================= */
+
+section:first-of-type {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+section:first-of-type img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+section:first-of-type h2 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2rem;
+}
+
+section:first-of-type p {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+
+/* ================= CATEGORY CARDS ================= */
+
+main section:nth-of-type(2)>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+main section:nth-of-type(2) div div {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+main section:nth-of-type(2) img {
+    height: 140px;
+    object-fit: cover;
+}
+
+main section:nth-of-type(2) h3 {
+    margin: 10px 0;
+    color: #0f4c5c;
+}
+
+
+/* ================= MENU ITEMS ================= */
+
+#menuContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+#menuContainer div {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+#menuContainer div:hover {
+    transform: translateY(-5px);
+}
+
+#menuContainer h3 {
+    color: #0f4c5c;
+    margin-bottom: 10px;
+}
+
+
+/* Add to Cart Button */
+
+#menuContainer button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #f4a261;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#menuContainer button:hover {
+    background: #e76f51;
+}
+
+
+/* ================= CART SECTION ================= */
+
+section:has(#cartItems) {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#cartItems p {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#cartTotal {
+    color: #e76f51;
+    font-weight: bold;
+}
+
+
+/* ================= ORDER FORM ================= */
+
+#orderForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#orderForm label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+#orderForm input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#orderForm button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #0f4c5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#orderForm button:hover {
+    background: #083944;
+}
+
+
+/* ================= MODAL ================= */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* ================= CONTACT PAGE ================= */
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* Headings */
+
+main h2 {
+    text-align: center;
+    color: #0f4c5c;
+    margin-bottom: 10px;
+}
+
+main p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* Sections */
+
+main section {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Section titles */
+
+main section h3 {
+    margin-bottom: 15px;
+    color: #0f4c5c;
+}
+
+
+/* ================= FORMS ================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* Labels */
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+/* Inputs & Selects */
+
+form input,
+form select {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+
+/* Focus effect */
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #0f4c5c;
+}
+
+
+/* ================= BUTTONS ================= */
+
+form button {
+    margin-top: 10px;
+    padding: 12px;
+    background: #0f4c5c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #083944;
+}
+
+
+/* ================= TOTAL PRICE ================= */
+
+h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+
+/* ================= MAIN LAYOUT ================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* Page title */
+
+main h2 {
+    text-align: center;
+    color: #0f4c5c;
+    margin-bottom: 10px;
+}
+
+main>p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* ================= GRID LAYOUT ================= */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+
+/* Make header section full width */
+
+main h2,
+main>p,
+main section:last-of-type {
+    grid-column: 1 / -1;
+}
+
+
+/* ================= CARD STYLE ================= */
+
+main section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+main section:hover {
+    transform: translateY(-3px);
+}
+
+main section h3 {
+    margin-bottom: 15px;
+    color: #0f4c5c;
+}
+
+
+/* ================= FORM DESIGN ================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* Labels */
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+/* Inputs */
+
+form input,
+form select {
+    margin-top: 5px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+
+/* Focus */
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #0f4c5c;
+    box-shadow: 0 0 5px rgba(15, 76, 92, 0.3);
+}
+
+
+/* ================= BUTTON ================= */
+
+form button {
+    margin-top: 10px;
+    padding: 12px;
+    background: linear-gradient(135deg, #0f4c5c, #1f6f82);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #083944, #145c6f);
+}
+
+
+/* ================= RESERVATION FORM FIX ================= */
+
+main section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* Label styling */
+
+main section form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #333;
+}
+
+
+/* Input fields */
+
+main section form input {
+    margin-top: 6px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+}
+
+
+/* Focus effect */
+
+main section form input:focus {
+    outline: none;
+    border-color: #0f4c5c;
+    box-shadow: 0 0 5px rgba(15, 76, 92, 0.3);
+}
+
+
+/* Button */
+
+main section form button {
+    padding: 12px;
+    background: #0f4c5c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main section form button:hover {
+    background: #083944;
+}
+
+
+/* ================= TOTAL PRICE ================= */
+
+h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+#totalPrice {
+    color: #e76f51;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+
+/* ================= LOCATION ================= */
+
+main section:last-of-type {
+    text-align: center;
+    background: #f4f4f4;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+#totalPrice {
+    color: #e76f51;
+    font-weight: bold;
+}
+
+
+/* ================= LOCATION SECTION ================= */
+
+main section:last-of-type {
+    text-align: center;
+    background: #f7f7f7;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+    form input,
+    form select {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Fix hidden paragraph text */
+
+main section p {
+    color: #333;
+    background: transparent;
+    position: static;
+    transform: none;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+}
+
+#closeModal {
+    float: right;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    section:first-of-type h2 {
+        font-size: 1.6rem;
+    }
+    section:first-of-type p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    section:first-of-type h2 {
+        font-size: 1.8rem;
+    }
+    section:first-of-type p {
+        font-size: 0.9rem;
+    }
+    footer>div:nth-of-type(2) {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
